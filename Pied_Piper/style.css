@@ -1,0 +1,192 @@
+body {
+    margin: 0px auto; /*Расстояние от края элемента до края окна браузера*/
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    color: black;
+}
+/* Header styles start */
+
+.header {
+    width: 100%; /*Устанавливает ширину содержимого элемента*/
+    background-color: #007765; /*Определяет цвет фона элемента*/
+    height: 84px; /*Устанавливает высоту содержимого элемента*/
+    display: flex; /*Определяет как элемент должен быть показан в документе*/
+    align-items: center; /*Выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении*/
+    justify-content: space-evenly;
+    position: fixed; /* Устанавливает позиционирование, теперь хедер не занимает поток экрана*/
+    top: 0; /*Расстояние от верхнего края родительского элемента до верхнего края дочернего элемента*/
+    left: 0;
+}
+.header_list {
+    display: flex;
+}
+.header_item {
+    margin-right: 23px; 
+    list-style: none;
+}
+.header_item:last-child { /* Убрать отступ у последнего элемента */
+    margin-right: 0px;
+}
+.header_link {
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;  /* Убрать подчеркивание ссылок */
+}
+.header_link:hover, .header_link:focus, .header_link:active {
+    opacity: .75;
+}
+
+/* Header styles end */
+
+/* Section 1 styles start */
+
+.section1 {
+    background: url(images/PiperNetIsHere.png) no-repeat;
+    background-size: cover; /* Картинка полностью покрывает блок*/
+    margin-top: 84px; /*Устанавливает величину отступа от верхнего края элемента*/
+    padding-top: 160px; /*Устанавливает значение поля от верхнего края содержимого элемента*/
+    padding-bottom: 160px; /*Устанавливает значение поля от нижнего края содержимого элемента*/
+}
+.section1_title {
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+/* Section 1 styles end */
+
+/* Section 2 styles start */
+
+.section2_title {
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}
+.section2_text {
+
+    margin-bottom: 92px;
+    padding-left: 450px;
+    padding-right: 450px;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+
+/* Section 2 styles end */
+
+/* Section 3 styles start */
+
+.section3 {
+    background: url(images/WeAreInThis.png) no-repeat;
+    background-size: cover; /* Картинка полностью покрывает блок*/
+    background-position: center center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.container {
+    box-sizing: border-box;
+    max-width: 1219px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+.section3_text {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Section 3 styles end */
+
+/* Section 4 styles start */
+
+.section4_title {
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}
+.section4_text {
+    margin-bottom: 92px;
+    padding-left: 450px;
+    padding-right: 450px;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+.section4_img {
+    clear: left;
+    float: left;
+    padding-right: 48px;
+}
+
+/* Section 4 styles end */
+
+/* Section 5 styles start */
+
+.section5 {
+    width: 1200px; /*Устанавливает ширину содержимого элемента*/
+    margin: 0 auto;/*Определяет как элемент должен быть показан в документе*/
+}
+
+.section5_title {
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .section5_fig {
+    text-align: center;
+    flex-basis: 33%;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+
+
+.section5_name {
+    margin: 0;
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #007765;
+}
+/* Section 5 styles end */
+
+/* Footer styles start */
+.footer {
+    padding-top: 50px; /*Устанавливает значение поля от верхнего края содержимого элемента*/
+    background-color: #333; /*Определяет цвет фона элемента*/
+    height: 176px; /*Устанавливает высоту содержимого элемента*/
+    text-align: center; /*Определяет горизонтальное выравнивание текста в пределах элемента*/
+  } 
+.footer_text {
+    width: 540px; /*Устанавливает ширину содержимого элемента*/
+    height: 74px; /*Устанавливает высоту содержимого элемента*/
+    margin: 0 auto; /*Расстояние от края элемента до края другог элемента*/
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  /* Footer styles end */
